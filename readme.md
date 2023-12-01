@@ -36,6 +36,8 @@ To get started with ChatApp, follow these steps:
 
 To run ChatApp on your local machine, execute the following command:
 
+```npm start```
+
 The application will be accessible at `http://localhost:3000`.
 
 ## Contributing
