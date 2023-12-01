@@ -46,7 +46,9 @@ Swal.fire({
   socket.on('newMessage', (messageObj)=>{
     let paragraph = document.createElement('p');
     paragraph.innerHTML=`<p>-<strong>${messageObj.sender}<strong>: ${messageObj.message} </p>`;
-    messageDiv.append(paragraph);
+    let hr = document.createElement('hr')
+    messageDiv.append(paragraph, hr);
+    messageDiv.scrollTop=messageDiv.scrollHeight;
   })
   
   socket.on('newUser', (userName)=>{ //Alert users that a new person has logged in 
